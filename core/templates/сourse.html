@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Курс по {{ object.name }}</p>
+    <p>Стоимость курса {{ object.price }}</p>
+    <a href="/courses">Назад</a>
+{% endblock %}

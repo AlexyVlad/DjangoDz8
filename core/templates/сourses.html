@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for сourse in object_list %}
+        <li>{{ сourse.name }} (<a href="course/{{ сourse.id }}">Перейти</a>)</li>
+{% endfor %}
+        <a href="/">Назад</a>
+{% endblock %}
